@@ -26,7 +26,7 @@ read CHANGE
 echo 'change:' $CHANGE
 
 # Make tx
-TX="$(bx tx-encode -i $UTXO:1 -o $NEWADDY:$AMOUNT)"
+TX="$(bx tx-encode -i $UTXO:1 -o $NEWADDY:$AMOUNT -o $ADDY:$CHANGE)"
 
 echo '\n'
 echo '========Unsigned Transaction========'
